@@ -18,8 +18,14 @@ public class RetriveSingleObjectTest
 		                        Student s=query.getSingleResult();
 		                        System.out.println(s.getRollno());
 		                        System.out.println(s.getName());
+		
 		                        
-		                        
+		                         Query<Student1> query=Session.createQuery(hql);
+		                         query.setParameter("id",2);
+		                         Student1 s=query.getSingleResult();
+		                         System.out.println(s.getRollno());
+		                         system.out.println(s.getName());
+		                          
 		                        
 		                        		
 		                        		
